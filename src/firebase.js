@@ -11,14 +11,6 @@ const firebaseConfig = {
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
   appId: process.env.REACT_APP_APP_ID,
   databaseURL: process.env.REACT_APP_DATABASE_URL,
-
-  // apiKey: "AIzaSyBy6NSCjxP71hkYNTCCwHhJKMkvqh4sMA0",
-  // authDomain: "sharp-lab-payment.firebaseapp.com",
-  // projectId: "sharp-lab-payment",
-  // storageBucket: "sharp-lab-payment.appspot.com",
-  // messagingSenderId: "840800354685",
-  // appId: "1:840800354685:web:58db4d9359cf9b7527cc14",
-  // databaseURL: "https://sharp-lab-payment-default-rtdb.firebaseio.com",
 };
 
 // Initialize Firebase

@@ -5,7 +5,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand fw-bold" to="/">
-          Sharp Labs
+          Sharpe Labs
         </Link>
         <button
           className="navbar-toggler"
