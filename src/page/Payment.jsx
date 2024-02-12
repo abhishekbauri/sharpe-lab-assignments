@@ -51,7 +51,6 @@ const Payment = () => {
       setAmount("");
       navigate("/history");
     } catch (error) {
-      console.log(error);
       toast.error(error.message || "Payment failed..");
     }
   };
