@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar css */
+.navbar {
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: 0.3px solid gray !important;
+}
+
+.nav-link {
+  font-weight: 500 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+/* home page css */
+.text-style h1 {
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.text-style span {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(88, 88, 224);
+  font-style: italic;
+}
+
+.inner-box {
+  width: 16rem;
+  height: 16rem;
+  position: absolute;
+  border: none;
+  border-radius: 23% 77% 38% 62% / 45% 45% 55% 55%;
+  z-index: -1;
+  background: linear-gradient(rgb(7, 30, 233), rgb(7, 195, 216));
+  opacity: 0.4;
+  box-shadow:
+    10px 10px 60px #0ae7f7,
+    -10px -10px 60px #0a9ecf;
+  animation: rotateLinear 4s linear infinite;
+}
+
+@keyframes rotateLinear {
+  from {
+    transform: rotate(0deg); /* Rotate from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+/* Pay now buttons css */
+.newBtn {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s ease;
+  box-shadow:
+    4px 4px 10px #c5c5c5,
+    -4px -4px 10px #ffffff;
+}
+
+.newBtn::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #245ce0 0%, #25e0dd 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.newBtn:hover::before {
+  width: 9em;
+}
+.newBtn:hover {
+  color: #ffffff;
+}
+
+/* pay now css */
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.payment-page {
+  background: linear-gradient(
+    45deg,
+    rgba(60, 247, 239, 1) 0%,
+    rgba(37, 66, 228, 1) 35%,
+    rgba(255, 0, 44, 1) 100%
+  );
+}
+
+.payment-form {
+  color: #fff;
+  background: rgba(240, 232, 232, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(20px);
+  border: 1px solid #aea9a9;
+  border-radius: 20px;
+}
